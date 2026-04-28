@@ -172,10 +172,13 @@
 ## 📸 Скриншоты
 ### Дашборд общего капитала
 <img width="1919" height="1079" alt="Снимок экрана 2026-04-28 201623" src="https://github.com/user-attachments/assets/6216f37e-f48c-4292-b737-f337fcd20689" />
+
 ### План/факт бюджета
 <img width="1917" height="1079" alt="Снимок экрана 2026-04-28 201724" src="https://github.com/user-attachments/assets/3efca4a0-caa2-420f-9754-44a8abe56935" />
+
 ### Отчет по расходам
 <img width="1906" height="861" alt="Снимок экрана 2026-04-28 201949" src="https://github.com/user-attachments/assets/a40ff845-aef7-4ab0-956e-023bfbd3f854" />
+
 ### ТГ Бот
 <img width="707" height="798" alt="Снимок экрана 2026-04-28 202038" src="https://github.com/user-attachments/assets/1fb61a7b-b394-480d-a408-453624fa56ba" />
 
