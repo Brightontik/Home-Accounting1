@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.ИзменениеСтоимостиАктива.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ОбменВалюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПриобретениеАктива.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Активы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыАктивов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыВалюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиАктивов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиВалюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ИзменениеСтоимостиАктива.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ОбменВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ПриобретениеАктива.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Активы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыСведений</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ИзменениеСтоимостиАктива.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ОбменВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ПриобретениеАктива.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Catalog.Активы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиАктивов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиВалюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыСведений</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Документы</Group>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>CommandGroup.РегистрыНакопления</Group>
+		<Group>CommandGroup.РегистрыСведений</Group>
+	</GroupsOrder>
+</CommandInterface>

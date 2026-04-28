@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.Доход.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Перевод.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.Расход.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПланБюджетаМесяца.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.СтатьиДоходов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.КатегорииРасходов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыПоКатегориям.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиДенег.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ИтогиПланаМесяца.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.Доход.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.Перевод.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.Расход.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ПланБюджетаМесяца.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.СтатьиДоходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.КатегорииРасходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыПоКатегориям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиДенег.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.ИтогиПланаМесяца.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыСведений</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.Доход.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.Перевод.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.Расход.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Document.ПланБюджетаМесяца.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Документы</CommandGroup>
+		</Command>
+		<Command name="Catalog.СтатьиДоходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.КатегорииРасходов.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОборотыПоКатегориям.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="AccumulationRegister.ОстаткиДенег.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыНакопления</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ИтогиПланаМесяца.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.РегистрыСведений</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Документы</Group>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>CommandGroup.РегистрыНакопления</Group>
+		<Group>CommandGroup.РегистрыСведений</Group>
+	</GroupsOrder>
+</CommandInterface>
