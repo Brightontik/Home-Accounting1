@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="МесяцПлана" id="7">
+			<DataPath>Объект.МесяцПлана</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МесяцПланаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МесяцПланаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">МесяцПланаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Пользователь" id="10">
+			<DataPath>Объект.Пользователь</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ПользовательПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ДоходМесяца" id="13">
+			<DataPath>Объект.ДоходМесяца</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоходМесяцаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДоходМесяцаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ОбязательныеТратыИтого" id="16">
+			<DataPath>Объект.ОбязательныеТратыИтого</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОбязательныеТратыИтогоКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОбязательныеТратыИтогоРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ДоступноКПланированию" id="19">
+			<DataPath>Объект.ДоступноКПланированию</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоступноКПланированиюКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДоступноКПланированиюРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Нераспределено" id="22">
+			<DataPath>Объект.Нераспределено</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НераспределеноКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НераспределеноРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Button name="Рассчитать" id="78">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Рассчитать</CommandName>
+			<ExtendedTooltip name="РассчитатьРасширеннаяПодсказка" id="79"/>
+		</Button>
+		<LabelDecoration name="Заглушка1" id="83">
+			<ContextMenu name="Заглушка1КонтекстноеМеню" id="84"/>
+			<ExtendedTooltip name="Заглушка1РасширеннаяПодсказка" id="85"/>
+		</LabelDecoration>
+		<LabelDecoration name="Заглушка" id="80">
+			<ContextMenu name="ЗаглушкаКонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="ЗаглушкаРасширеннаяПодсказка" id="82"/>
+		</LabelDecoration>
+		<Table name="ОбязательныеТраты" id="25">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ОбязательныеТраты</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОбязательныеТратыКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ОбязательныеТратыКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ОбязательныеТратыРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ОбязательныеТратыСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ОбязательныеТраты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбязательныеТратыСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ОбязательныеТратыСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОбязательныеТратыСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ОбязательныеТраты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбязательныеТратыСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ОбязательныеТратыСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОбязательныеТратыУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ОбязательныеТраты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОбязательныеТратыУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ОбязательныеТратыУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОбязательныеТратыНомерСтроки" id="38">
+					<DataPath>Объект.ОбязательныеТраты.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОбязательныеТратыНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОбязательныеТратыНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ОбязательныеТратыНаименование" id="41">
+					<DataPath>Объект.ОбязательныеТраты.Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбязательныеТратыНаименованиеКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОбязательныеТратыНаименованиеРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ОбязательныеТратыСумма" id="44">
+					<DataPath>Объект.ОбязательныеТраты.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбязательныеТратыСуммаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ОбязательныеТратыСуммаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="ОбязательныеТратыКомментарий" id="47">
+					<DataPath>Объект.ОбязательныеТраты.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбязательныеТратыКомментарийКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОбязательныеТратыКомментарийРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="Заглушка3" id="89">
+			<ContextMenu name="Заглушка3КонтекстноеМеню" id="90"/>
+			<ExtendedTooltip name="Заглушка3РасширеннаяПодсказка" id="91"/>
+		</LabelDecoration>
+		<LabelDecoration name="Заглушка2" id="86">
+			<ContextMenu name="Заглушка2КонтекстноеМеню" id="87"/>
+			<ExtendedTooltip name="Заглушка2РасширеннаяПодсказка" id="88"/>
+		</LabelDecoration>
+		<Table name="ПланПоКатегориям" id="50">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПланПоКатегориям</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПланПоКатегориямКонтекстноеМеню" id="51"/>
+			<AutoCommandBar name="ПланПоКатегориямКоманднаяПанель" id="52"/>
+			<ExtendedTooltip name="ПланПоКатегориямРасширеннаяПодсказка" id="53"/>
+			<SearchStringAddition name="ПланПоКатегориямСтрокаПоиска" id="54">
+				<AdditionSource>
+					<Item>ПланПоКатегориям</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПланПоКатегориямСтрокаПоискаКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ПланПоКатегориямСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПланПоКатегориямСостояниеПросмотра" id="57">
+				<AdditionSource>
+					<Item>ПланПоКатегориям</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПланПоКатегориямСостояниеПросмотраКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="ПланПоКатегориямСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПланПоКатегориямУправлениеПоиском" id="60">
+				<AdditionSource>
+					<Item>ПланПоКатегориям</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПланПоКатегориямУправлениеПоискомКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="ПланПоКатегориямУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПланПоКатегориямНомерСтроки" id="63">
+					<DataPath>Объект.ПланПоКатегориям.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланПоКатегориямНомерСтрокиКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ПланПоКатегориямНомерСтрокиРасширеннаяПодсказка" id="65"/>
+				</LabelField>
+				<InputField name="ПланПоКатегориямКатегория" id="66">
+					<DataPath>Объект.ПланПоКатегориям.Категория</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПланПоКатегориямКатегорияКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ПланПоКатегориямКатегорияРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ПланПоКатегориямТипРаспределенияБюджета" id="69">
+					<DataPath>Объект.ПланПоКатегориям.ТипРаспределенияБюджета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПланПоКатегориямТипРаспределенияБюджетаКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ПланПоКатегориямТипРаспределенияБюджетаРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ПланПоКатегориямПроцент" id="72">
+					<DataPath>Объект.ПланПоКатегориям.Процент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПланПоКатегориямПроцентКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ПланПоКатегориямПроцентРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ПланПоКатегориямСумма" id="75">
+					<DataPath>Объект.ПланПоКатегориям.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПланПоКатегориямСуммаКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ПланПоКатегориямСуммаРасширеннаяПодсказка" id="77"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПланБюджетаМесяца</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.ОбязательныеТраты"/>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Рассчитать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаРассчитать</Action>
+		</Command>
+	</Commands>
+</Form>
