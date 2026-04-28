@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/bbed2c3a-bbbf-488d-aaf2-ad26508bbb87" /># 🏠 Домашняя Бухгалтерия
+# 🏠 Домашняя Бухгалтерия
 Полноценная система для управления личными финансами с многовалютностью, бюджетированием, инвестициями и интеграцией с Telegram ботом.
 
 ## 📋 Оглавление
@@ -171,9 +171,9 @@
 ---
 ## 📸 Скриншоты
 ### Дашборд общего капитала
-![Дашборд](<img width="1919" height="1079" alt="Снимок экрана 2026-04-28 201623" src="https://github.com/user-attachments/assets/6216f37e-f48c-4292-b737-f337fcd20689" />)
+![Дашборд]<img width="1919" height="1079" alt="Снимок экрана 2026-04-28 201623" src="https://github.com/user-attachments/assets/6216f37e-f48c-4292-b737-f337fcd20689" />
 ### План/факт бюджета
-![План факт](<img width="1917" height="1079" alt="Снимок экрана 2026-04-28 201724" src="https://github.com/user-attachments/assets/3efca4a0-caa2-420f-9754-44a8abe56935" />)
+![План факт]<img width="1917" height="1079" alt="Снимок экрана 2026-04-28 201724" src="https://github.com/user-attachments/assets/3efca4a0-caa2-420f-9754-44a8abe56935" />
 ### Отчет по расходам
 ![Отчеты](screenshots/reports.png)
 ### Unit-тесты
