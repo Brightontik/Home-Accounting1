@@ -182,3 +182,5 @@
 ### ТГ Бот
 <img width="707" height="798" alt="Снимок экрана 2026-04-28 202038" src="https://github.com/user-attachments/assets/1fb61a7b-b394-480d-a408-453624fa56ba" />
 
+### Логи
+<img width="1914" height="865" alt="Снимок экрана 2026-04-28 204822" src="https://github.com/user-attachments/assets/9065789c-e86e-44c2-a1f1-c76182939d7b" />
