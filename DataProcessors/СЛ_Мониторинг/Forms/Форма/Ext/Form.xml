@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<Pages name="Страницы" id="67">
@@ -30,6 +32,8 @@
 							<v8:content>Логи</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ЛогиРасширеннаяПодсказка" id="72"/>
 					<ChildItems>
 						<UsualGroup name="Фильтры" id="1">
@@ -46,6 +50,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<Representation>WeakSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ФильтрыРасширеннаяПодсказка" id="2"/>
 							<ChildItems>
@@ -62,6 +67,7 @@
 											<v8:content>Подгруппа1</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Подгруппа1РасширеннаяПодсказка" id="16"/>
@@ -99,6 +105,7 @@
 											<v8:content>Подгруппа2</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Подгруппа2РасширеннаяПодсказка" id="18"/>
@@ -158,7 +165,7 @@
 								</LabelDecoration>
 								<Table name="СписокСобытий" id="19">
 									<CommandBarLocation>Top</CommandBarLocation>
-									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<RowSelectionMode>Cell</RowSelectionMode>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>СписокСобытий</DataPath>
 									<RowPictureDataPath>СписокСобытий.DefaultPicture</RowPictureDataPath>
@@ -268,6 +275,8 @@
 							<v8:content>Лимиты</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ЛимитыРасширеннаяПодсказка" id="74"/>
 					<ChildItems>
 						<UsualGroup name="Фильтры2" id="75">
@@ -301,6 +310,7 @@
 											<v8:content>Подгруппа лимит1</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ПодгруппаЛимит1РасширеннаяПодсказка" id="93"/>
@@ -338,6 +348,7 @@
 											<v8:content>Подгруппа лимит2</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ПодгруппаЛимит2РасширеннаяПодсказка" id="95"/>
@@ -386,12 +397,13 @@
 									<v8:content>Таблица лимит</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Group>HorizontalIfPossible</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ТаблицаЛимитРасширеннаяПодсказка" id="97"/>
 							<ChildItems>
 								<Table name="СписокЛимитов" id="98">
-									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<RowSelectionMode>Cell</RowSelectionMode>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>СписокЛимитов</DataPath>
 									<RowPictureDataPath>СписокЛимитов.DefaultPicture</RowPictureDataPath>

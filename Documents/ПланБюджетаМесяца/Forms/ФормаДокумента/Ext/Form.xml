@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -8,6 +10,7 @@
 		<InputField name="Номер" id="1">
 			<DataPath>Объект.Number</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
@@ -15,6 +18,7 @@
 		<InputField name="Дата" id="4">
 			<DataPath>Объект.Date</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
@@ -22,6 +26,7 @@
 		<InputField name="МесяцПлана" id="7">
 			<DataPath>Объект.МесяцПлана</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="МесяцПланаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="МесяцПланаРасширеннаяПодсказка" id="9"/>
@@ -32,6 +37,7 @@
 		<InputField name="Пользователь" id="10">
 			<DataPath>Объект.Пользователь</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ПользовательКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="12"/>
@@ -43,6 +49,7 @@
 			<DataPath>Объект.ДоходМесяца</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ДоходМесяцаКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="ДоходМесяцаРасширеннаяПодсказка" id="15"/>
@@ -51,6 +58,7 @@
 			<DataPath>Объект.ОбязательныеТратыИтого</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОбязательныеТратыИтогоКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="ОбязательныеТратыИтогоРасширеннаяПодсказка" id="18"/>
@@ -59,6 +67,7 @@
 			<DataPath>Объект.ДоступноКПланированию</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ДоступноКПланированиюКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ДоступноКПланированиюРасширеннаяПодсказка" id="21"/>
@@ -67,6 +76,7 @@
 			<DataPath>Объект.Нераспределено</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НераспределеноКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="НераспределеноРасширеннаяПодсказка" id="24"/>
@@ -85,6 +95,8 @@
 			<ExtendedTooltip name="ЗаглушкаРасширеннаяПодсказка" id="82"/>
 		</LabelDecoration>
 		<Table name="ОбязательныеТраты" id="25">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -121,12 +133,14 @@
 				<LabelField name="ОбязательныеТратыНомерСтроки" id="38">
 					<DataPath>Объект.ОбязательныеТраты.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ОбязательныеТратыНомерСтрокиКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ОбязательныеТратыНомерСтрокиРасширеннаяПодсказка" id="40"/>
 				</LabelField>
 				<InputField name="ОбязательныеТратыНаименование" id="41">
 					<DataPath>Объект.ОбязательныеТраты.Наименование</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбязательныеТратыНаименованиеКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="ОбязательныеТратыНаименованиеРасширеннаяПодсказка" id="43"/>
@@ -134,6 +148,7 @@
 				<InputField name="ОбязательныеТратыСумма" id="44">
 					<DataPath>Объект.ОбязательныеТраты.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбязательныеТратыСуммаКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="ОбязательныеТратыСуммаРасширеннаяПодсказка" id="46"/>
@@ -141,6 +156,7 @@
 				<InputField name="ОбязательныеТратыКомментарий" id="47">
 					<DataPath>Объект.ОбязательныеТраты.Комментарий</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбязательныеТратыКомментарийКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="ОбязательныеТратыКомментарийРасширеннаяПодсказка" id="49"/>
@@ -156,6 +172,8 @@
 			<ExtendedTooltip name="Заглушка2РасширеннаяПодсказка" id="88"/>
 		</LabelDecoration>
 		<Table name="ПланПоКатегориям" id="50">
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -192,12 +210,14 @@
 				<LabelField name="ПланПоКатегориямНомерСтроки" id="63">
 					<DataPath>Объект.ПланПоКатегориям.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ПланПоКатегориямНомерСтрокиКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ПланПоКатегориямНомерСтрокиРасширеннаяПодсказка" id="65"/>
 				</LabelField>
 				<InputField name="ПланПоКатегориямКатегория" id="66">
 					<DataPath>Объект.ПланПоКатегориям.Категория</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПланПоКатегориямКатегорияКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ПланПоКатегориямКатегорияРасширеннаяПодсказка" id="68"/>
@@ -205,6 +225,7 @@
 				<InputField name="ПланПоКатегориямТипРаспределенияБюджета" id="69">
 					<DataPath>Объект.ПланПоКатегориям.ТипРаспределенияБюджета</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПланПоКатегориямТипРаспределенияБюджетаКонтекстноеМеню" id="70"/>
 					<ExtendedTooltip name="ПланПоКатегориямТипРаспределенияБюджетаРасширеннаяПодсказка" id="71"/>
@@ -212,6 +233,7 @@
 				<InputField name="ПланПоКатегориямПроцент" id="72">
 					<DataPath>Объект.ПланПоКатегориям.Процент</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПланПоКатегориямПроцентКонтекстноеМеню" id="73"/>
 					<ExtendedTooltip name="ПланПоКатегориямПроцентРасширеннаяПодсказка" id="74"/>
@@ -219,6 +241,7 @@
 				<InputField name="ПланПоКатегориямСумма" id="75">
 					<DataPath>Объект.ПланПоКатегориям.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПланПоКатегориямСуммаКонтекстноеМеню" id="76"/>
 					<ExtendedTooltip name="ПланПоКатегориямСуммаРасширеннаяПодсказка" id="77"/>

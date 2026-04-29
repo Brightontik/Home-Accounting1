@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии1</Event>
@@ -19,6 +21,8 @@
 					<v8:content>Период</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
 			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="8"/>
 			<ChildItems>
 				<InputField name="ДатаНачала" id="1">
@@ -70,6 +74,8 @@
 					<v8:content>Графики</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
 			<ExtendedTooltip name="ГрафикиРасширеннаяПодсказка" id="15"/>
 			<ChildItems>
 				<ChartField name="ДиаграммаКатегории" id="11">
@@ -113,6 +119,8 @@
 					<v8:content>Декорации</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
 			<ExtendedTooltip name="ДекорацииРасширеннаяПодсказка" id="54"/>
 			<ChildItems>
 				<UsualGroup name="ДекорацииПользователь" id="55">
@@ -128,6 +136,8 @@
 							<v8:content>Декорации пользователь</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>HorizontalIfPossible</Group>
+					<Representation>WeakSeparation</Representation>
 					<ExtendedTooltip name="ДекорацииПользовательРасширеннаяПодсказка" id="56"/>
 					<ChildItems>
 						<LabelDecoration name="НадписьПавел" id="44">
@@ -171,6 +181,8 @@
 					<v8:content>Общийрезультат</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>HorizontalIfPossible</Group>
+			<Representation>WeakSeparation</Representation>
 			<ExtendedTooltip name="ОбщийрезультатРасширеннаяПодсказка" id="58"/>
 			<ChildItems>
 				<LabelDecoration name="НадписьОбщий" id="50">
@@ -191,6 +203,8 @@
 		</LabelDecoration>
 		<Table name="СписокРасходов" id="19">
 			<Representation>List</Representation>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -229,6 +243,7 @@
 				<InputField name="СписокРасходовДата" id="32">
 					<DataPath>Объект.СписокРасходов.Дата</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СписокРасходовДатаКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="СписокРасходовДатаРасширеннаяПодсказка" id="34"/>
@@ -236,6 +251,7 @@
 				<InputField name="СписокРасходовКатегории" id="35">
 					<DataPath>Объект.СписокРасходов.Категория</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СписокРасходовКатегорииКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="СписокРасходовКатегорииРасширеннаяПодсказка" id="37"/>
@@ -243,6 +259,7 @@
 				<InputField name="СписокРасходовСумма" id="38">
 					<DataPath>Объект.СписокРасходов.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СписокРасходовСуммаКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="СписокРасходовСуммаРасширеннаяПодсказка" id="40"/>
@@ -250,6 +267,7 @@
 				<InputField name="СписокРасходовПользователь" id="41">
 					<DataPath>Объект.СписокРасходов.Пользователь</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СписокРасходовПользовательКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="СписокРасходовПользовательРасширеннаяПодсказка" id="43"/>
